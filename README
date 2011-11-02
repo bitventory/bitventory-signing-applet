@@ -1,0 +1,62 @@
+=====================================
+Bitventory.com Browser Signing Applet
+=====================================
+
+Description
+-----------
+
+The Bitventory.com Browser Signing Applet is a tool accessed by the Bitventory
+web application to perform operations needed to run an online wallet. This applet
+lets the user retain control of transaction signing, key generation, and other
+sensitive operations.
+
+By offloading these methods to outside, auditable code that the user can swap
+in, Bitventory allows the user to fully control the code used to perform
+critical functions on the site. In this manner, the site operator
+or any malicious third party that gains unauthorized access to the site
+will be unable to steal funds from accounts.
+
+It is hoped that users, or members of the Bitcoin community, will
+audit this code and let others know that particular revisions of the
+code on Github are safe. As the applet should NOT be frequently updated,
+this means the current head of the repository should be trustworthy.
+
+Requirements
+------------
+
+This README assumes you're using a POSIX-compliant system such as a
+GNU/Linux distribution of some sort (Ubuntu, Debian, Fedora, etc). If
+you're using Windows, you'll need to obtain a package called Cygwin
+and figure this out yourself.
+
+If you'd like to contribute information on how to use this tool
+with Cygwin on Windows systems, please send me a pull request.
+
+JDK6 is required.
+
+The Bouncy Castle cryptographic API for Java is also required.
+Classes are included for convenience, and source can be obtained
+from:
+
+    http://www.bouncycastle.org/latest_releases.html
+
+The Simple Logging Facade 4 Java is required. Classes are included
+for convenience, and source can be obtained from:
+
+    http://www.slf4j.org/download.html
+
+
+Instructions
+------------
+
+To install the tool, please see INSTALL in the source directory.
+
+Once the jar file is compiled and ready, you'll need to upload
+it to a web host and add that URL to your Bitventory settings
+page. For details on how to do this as well as how to generate
+keys and sign your own jar, please check the "Source" page
+at Bitventory for instructions.
+
+For help using this tool, feel free to shoot an email to:
+    support@bitventory.com
+

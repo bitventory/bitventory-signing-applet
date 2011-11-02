@@ -1,0 +1,36 @@
+=====================================
+Bitventory.com Browser Signing Applet
+=====================================
+
+Installation
+------------
+
+For easy compilation, run the following from the root directory:
+
+    ./build.sh
+
+This will create the applet as: MyBitventoryApplet.jar
+
+NOTE: This script pulls down pre-compiled dependencies. This
+includes the Bouncy Castle crypto library for Java as well as
+the Simple Logging Facade 4 Java.
+
+If you wish to compile these yourself, please visit:
+
+	http://www.bouncycastle.org/latest_releases.html
+
+	http://www.slf4j.org/download.html
+
+You will need to compile and place their classes in lib/org/
+
+For convenience, plugin.jar (used for Java->Javascript
+communication) is included as well, but you may copy it
+from your system into the project directory to use it.
+
+For information about how to sign and use this applet
+with the Bitventory.com service, please login to your
+wallet and click on the "Source" tab.
+
+For help using this tool, feel free to shoot an email to:
+    support@bitventory.com
+
